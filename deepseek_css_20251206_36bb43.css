@@ -1,0 +1,108 @@
+/* Основные настройки */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ed 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Шапка */
+.header {
+    background: linear-gradient(90deg, #2c3e50, #4a6491);
+    color: white;
+    padding: 50px 40px;
+    text-align: center;
+    border-bottom: 5px solid #d4a574;
+}
+
+.header h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Область с основным текстом */
+.main-content {
+    padding: 60px 50px;
+}
+
+.content {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.content p {
+    margin-bottom: 30px;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.content p:first-child:first-letter {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4.5rem;
+    font-weight: 600;
+    float: left;
+    line-height: 1;
+    margin: 5px 15px 5px 0;
+    color: #2c3e50;
+}
+
+/* Подвал */
+.footer {
+    background-color: #f8f9fa;
+    padding: 25px;
+    text-align: center;
+    color: #6c757d;
+    font-size: 0.95rem;
+    border-top: 1px solid #eaeaea;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px auto;
+        border-radius: 15px;
+    }
+
+    .header {
+        padding: 35px 20px;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-content {
+        padding: 40px 25px;
+    }
+
+    .content p:first-child:first-letter {
+        font-size: 3.5rem;
+    }
+}
